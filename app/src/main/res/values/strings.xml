@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyBudget</string>
+    <string name="title_activity_main_menu">mainMenu</string>
+    <string name="dialog_1">Dialog 1</string>
+    <string name="dialog_2">Dialog 2</string>
+    <string name="message_text">Text of your message</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="maybe">Maybe</string>
+    <string name="text_tab_header">JustTab</string>
+    <string name="title_activity_main_tab_win">mainTabWin</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="FOOD">Food</string>
+    <string name="BigBuy">BigPurchase</string>
+    <string name="EveryMonth">EveryMonth</string>
+    <string name="Medicine">Medicine</string>
+    <string name="Other">Other</string>
+</resources>

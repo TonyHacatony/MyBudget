@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainMenuFragments.mainFragment">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main event"
+        android:textSize="30pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profit:0"
+        android:textSize="20pt"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance:0"
+        android:textSize="20pt"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textOutgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outgo:0"
+        android:textSize="20pt"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatBtnMinus"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="46dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/presence_busy" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatBtnPlus"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="46dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

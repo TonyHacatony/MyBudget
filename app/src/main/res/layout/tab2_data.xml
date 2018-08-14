@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainMenuFragments.dataFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/idPieChart"
+        android:layout_width="match_parent"
+        android:layout_height="429dp">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/titleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:text="I'TS TITLE FOR TYPES"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/titleValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:text="TITLE FOR VALUES"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
