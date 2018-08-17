@@ -11,12 +11,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/idPieChart"
-        android:layout_width="match_parent"
-        android:layout_height="429dp">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/idPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
 
-    </com.github.mikephil.charting.charts.PieChart>
+        </com.github.mikephil.charting.charts.PieChart>
 
     </LinearLayout>
 
@@ -36,15 +36,6 @@
             android:text="I'TS TITLE FOR TYPES"
             android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/titleValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="13dp"
-            android:text="TITLE FOR VALUES"
-            android:textSize="30sp" />
     </LinearLayout>
 
 </LinearLayout>

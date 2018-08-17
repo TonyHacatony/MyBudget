@@ -4,6 +4,7 @@ package com.example.noname.mybudget.mainMenuFragments;
 import android.content.Context;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -51,18 +52,27 @@ public class dataFragment extends Fragment {
         myDb = new DataBaseHelper(getActivity());
 
         textType = view.findViewById(R.id.titleType);
-        textValue = view.findViewById(R.id.titleValue);
 
 
         //pie chart settings
         pieChart.setRotationEnabled(false);
-        pieChart.setHoleRadius(50f);
-        pieChart.setTransparentCircleAlpha(0);
-        pieChart.setCenterText("Money");
-        pieChart.setCenterTextSize(20);
-        pieChart.setDrawEntryLabels(true);
+        pieChart.setHoleRadius(50);
+        pieChart.setTransparentCircleAlpha(180);
+        pieChart.setTransparentCircleRadius(55);
+        pieChart.setDrawEntryLabels(false);
+        pieChart.setBackgroundColor(Color.YELLOW);
+        pieChart.setNoDataText("Empty");
+        pieChart.setUsePercentValues(true);
 
-        //pie chart data
+
+        //add legend to data
+        Legend l = pieChart.getLegend();
+        l.setEnabled(true);
+        l.setYEntrySpace(0);
+        l.setTypeface(Typeface.MONOSPACE);
+        l.setPosition(Legend.LegendPosition.PIECHART_CENTER);
+        l.setForm(Legend.LegendForm.CIRCLE);
+        l.setFormSize(25);
 
         addDataSet();
 
@@ -93,29 +103,22 @@ public class dataFragment extends Fragment {
 
             //set pieDataSet
         PieDataSet dataSet = new PieDataSet(yEntrys,"Numbers");
-        dataSet.setSliceSpace(2);
-        dataSet.setValueTextSize(12);
-        dataSet.notifyDataSetChanged();
+        dataSet.setValueTextSize(30);
 
-        //add legend to data
-        Legend legend = pieChart.getLegend();
-        legend.setForm(Legend.LegendForm.CIRCLE);
-        legend.setEnabled(true);
-
-        //set colors
+            //set colors
         ArrayList<Integer> colors = new ArrayList<>();
-        colors.add(Color.CYAN);
+        colors.add(Color.BLACK);
         colors.add(Color.BLUE);
         colors.add(Color.RED);
         colors.add(Color.GRAY);
         colors.add(Color.MAGENTA);
         dataSet.setColors(colors);
 
-        //set pieData
+            //set pieData
         PieData data = new PieData(dataSet);
         data.setValueTextSize(5f);
         data.setValueTextColor(Color.BLACK);
-
+        dataSet.notifyDataSetChanged();
         pieChart.setData(data);
         pieChart.invalidate();
 

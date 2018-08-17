@@ -70,6 +70,8 @@ public class mainFragment extends Fragment {
                 showD().create();
             }
         });
+
+        if(myDb!=null) addData();
         return view;
     }
 
@@ -162,6 +164,11 @@ public class mainFragment extends Fragment {
         res.close();
     }
 
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if(myDb!=null) addData();
+    }
 
 }
 
