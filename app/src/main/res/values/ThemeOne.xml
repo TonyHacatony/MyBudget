@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="ThemeOne" parent="AppTheme" >
+    <item name="android:colorBackground">#A4D869</item>
+</style>
+<style name="ThemeOne.WithOutBar"   parent="AppTheme.NoActionBar" >
+    <item name="android:colorBackground">#A4D869</item>
+</style>
+</resources>
